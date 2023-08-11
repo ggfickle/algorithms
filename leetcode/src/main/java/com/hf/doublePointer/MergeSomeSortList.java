@@ -10,11 +10,7 @@ import java.util.PriorityQueue;
  */
 public class MergeSomeSortList {
 
-    public static void main(String[] args) {
-
-    }
-
-    public ListNode mergeKLists(ListNode[] lists) {
+    public static ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(a -> a.val));
         for (ListNode listNode : lists) {
             if (listNode != null) {
